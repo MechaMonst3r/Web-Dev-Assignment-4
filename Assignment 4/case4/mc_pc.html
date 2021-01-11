@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<title>Millenium Computers</title>
+<meta charset="utf-8">
+<link rel="stylesheet" href="mc_styles.css">
+<link rel="stylesheet" href="mc_forms.css">
+<script src="mc_script.js"></script>
+</head>
+
+<body>
+
+
+<h1><img src="mc_logo.png"></h1>
+<div>
+<form action="http://www.mill_computers.com/orders/process.cgi" method="post" name="cForm">
+
+ First Name:<br>
+ <input type="text" name="fName" required><br>
+
+ Last Name:<br>
+ <input type="text" name="lName" required><br>
+
+ Street Address:<br>
+ <input type="text" name="street" required><br>
+
+ City:<br>
+ <input type="text" name="city" required><br>
+
+ Province:<br>
+ <input list="province" name="province" required>
+  <datalist id="province">
+    <option value="AB">Alberta</option>
+	<option value="BC">British Columbia</option>
+	<option value="MN">Manitoba</option>
+	<option value="NB">New Brunswick</option>
+	<option value="NL">Newfoundland and Labrador</option>
+	<option value="NS">Nova Scotia</option>
+	<option value="ON">Ontario</option>
+	<option value="PI">Prince Edward Island</option>
+	<option value="QB">Quebec</option>
+	<option value="SS">Saskatchewan</option>
+  </datalist><br>
+  
+ ZIP Code:<br>
+ <input type="text" name="zip" pattern="[A-Za-z][0-9][A-Za-z] [0-9][A-Za-z][0-9]" required>
+ <small>Format: A0A 0A0</small><br>
+
+ Phone Number:<br>
+ <input type="tel" name="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required>
+ <small>Format: 999-999-9999</small><br>
+
+ <p>Processor Speed:</p>
+ <select name="pSpeed">
+    <option value="3.2ghz">3.2 GHz</option>
+	<option value="4.0ghz">4.0 GHz</option>
+	<option value="5.2ghz">5.2 GHz</option>
+ </select>
+
+ <p>Memory:</p>
+ <select name="mem">
+    <option value="1gb">1 GB</option>
+	<option value="2gb">2 GB</option>
+	<option value="4gb">4 GB</option>
+	<option value="8gb">8 GB</option>
+ </select>	
+	
+ <p>Monitor Size:</p>
+ <select name="monitor">
+    <option value="15inch">15"</option>
+    <option value="17inch">17"</option>
+    <option value="19inch">19"</option>
+    <option value="21inch">21"</option>	
+ </select>
+
+ <p>Hard Drive Size:</p>
+ <select name="hd">
+    <option value="240gb">240 GB</option>
+    <option value="500gb">500 GB</option>
+    <option value="750gb">750 GB</option>
+    <option value="1tb">1 TB</option>
+ </select>
+
+ <p>DvD Burner:</p>
+ <input type="radio" name="dvd" value="yes">Yes<br>
+ <input type="radio" name="dvd" value="no">No<br>
+
+ <p>Tuner Card:</p>
+ <input type="radio" name="tuner" value="yes"> Yes<br>
+ <input type="radio" name="tuner" value="no"> No<br>
+
+ <p>Media Card:</p>	
+ <input type="radio" name="mcard" value="yes">Yes<br>	
+ <input type="radio" name="mcard" value="no">No<br>	
+
+ <p>Would you like 24 month extended warranty?</p>
+ <input type="radio" value="yes">Yes<br>	
+ <input type="radio" value="no">No<br>
+
+ <p>Any additional Info or Comments?</p>
+ <textarea rows="4" cols="30" name="comment">Enter Text Here....</textarea>
+
+ <input type="submit" value="Send Order">
+ <input type="reset" value="Cancel Order">
+ <button type="button">Contact Me</button>
+</form>  
+</div>
+
+</body>
+</html>
+

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<head>
+<title>Assignment#4 Part 2</title>
+<meta charset="utf-8">
+</head>
+
+<body>
+<h1>Assignment 4: Part 2</h1>
+<p>
+<a href="https://www.formassembly.com/blog/web-form-design/">Resource 1</a>
+<a href="http://particletree.com/features/10-tips-to-a-better-form/">Resource 2</a>
+</p>
+
+<p>
+The biggest thing I have learned from reading these websites is that forms need to be flexible and easy to use.
+Making a form relatively complicated will only stop someone from filling it out.
+I want to make sure the order of the form makes sense and flows relatively easily with proper labelling to go along
+with it. Another is to make sure that the form is completely compatabile with older browsers as well to ensure that anyone
+and everyone has access to it. There are a ton of ways to make filling out a form easier for the user, such as auto-filling
+and error warnings that pop up as soon as possible. Formatting should be straightforward, give an example of what you're looking for
+but make the browser automatically format input without the user having to do it themselves. You also want to save the user the frustration
+of not having to refill out an entire form after they submit and encounter an error. You want the form to remember the information so
+it's easy for them to fix.
+</p>
+
+<form name="myForm">
+<label>Email:<input type="text" name="email" placeholder="Enter email" autocomplete="on"></label><br>
+<label>First Name: <input type="text" name="fName" placeholder="Enter first name" autocomplete="on" required></label>
+<label>Last Name: <input type="text" name="lName" placeholder="Enter last name" autocomplete="on" required></label><br>
+<label>Country:
+ <select name="country" required>
+    <option value=""></option>
+    <option value="canada">Canada</option>
+	<option value="other countries">Other Countries</option>
+	<option value="another country">Another Country</option>
+  </select>
+</label>
+<label>State/Province/Region: <input type="text" placeholder="Enter state/province/region" auto-filling="on" required>
+<label>City:<input type="text" name="city" placeholder="Enter city" autocomplete="on" required></label><br>
+<label>Address Line 1:<input type="text" name="address1" placeholder="Enter address 1" autocomplete="on" required>
+<small>Street adress, P.O. box, company name, c/o</small></label><br>
+<label>Address Line 2:<input type="text" name="address2" placeholder="Enter address 2" autocomplete="on">
+<small>Apartment, suite, unit, building, floor, ect</small></label><br>
+<label>ZIP Code/Postal Code:<input type="text" name="zip" placeholder="A0A 0A0" pattern="[A-Za-z][0-9][A-Za-z] [0-9][A-Za-z][0-9]" required>
+</label><br>
+<label>Phone Number: <input type="tel" name="phone" placeholder="999-999-9999" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required>
+</label><br>
+<label>Would you like to recieve additional emails and notifications?<input type="radio" name="yes">Yes</label><br>
+<label>Please provide any additional information or feedback on our service.</label><br>
+<textarea rows="5" cols="50" name="feedback" placeholder="Enter your info/feeback here..."></textarea><br>
+<input type="submit" value="Submit"><input type="reset" value="Cancel"><button name="contact">Contact Us!</button><br>
+</form>  
+
+<a href="mailto:snap42.lb@gmail.com?">Lukas Bowden</a>
+</body>
+</html> 
+
